@@ -3,6 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+#typing {
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  animation: blink-caret 0.7s step-end infinite;
+  width: 1050px; /* عرض كافي لـ 30 حرف */
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -31,10 +43,9 @@ hr {
   justify-content: center;
   margin: 20px auto;
   padding: 0 20px;
-  max-width: 1000px;
+  max-width: 1100px;
   flex-wrap: wrap;
 }
-
 .profile-section h1 {
   font-size: 60px;
   margin-bottom: 20px;
@@ -106,6 +117,7 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
+  
 }
 
 .service-card {

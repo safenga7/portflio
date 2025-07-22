@@ -5,26 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>profile</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <div class="arrow-background"></div>
 
   <header>
     <ul>
-      <li><a href="">About me</a></li>
-      <li><a href="">Projects</a></li>
-      <li><a href="">My Service</a></li>
+      <li><a href="#aboutme">About me</a></li>
+      <li><a href="#project">Projects</a></li>
+      <li><a href="#services">My Service</a></li>
       <li><a href="mailto:safenga7@gmail.com">Mail ME </a></li>
     </ul>
     <hr />
   </header>
 
   <section class="profile-section">
-    <h1>Hello I'm frontend developer.</h1>
+    <h1 id="typing">Hello I'm frontend developer.</h1>
     <img src="photo/me.jpeg" alt="my_photo" />
   </section>
 
-  <section class="profile-section2">
+  <section class="profile-section2" data-aos="fade-right">
     <div id="aboutme">
       <h2>About ME</h2>
       <p>
@@ -54,38 +55,38 @@
     <img class="img" src="photo/therpy5.png" alt="project" />
   </section>
 
-  <section id="services">
-    <div class="services-container">
-      <h2 class="section-title">Service</h2>
-      <div class="cards-wrapper">
-        <div class="service-card">
-          <h3>✅ Modern & Responsive Web Design</h3>
-          <p>Optimized for all screen sizes — desktop, tablet, and mobile.</p>
-        </div>
-        <div class="service-card">
-          <h3>🚀 Fast Performance & Speed Optimization</h3>
-          <p>Quick-loading websites for a smooth user experience.</p>
-        </div>
-        <div class="service-card">
-          <h3>🧩 Clean, Maintainable Code</h3>
-          <p>Easy to update and scale with well-structured HTML, CSS, and JavaScript.</p>
-        </div>
-        <div class="service-card">
-          <h3>✨ Interactive JavaScript Effects</h3>
-          <p>Dynamic animations and interactions to enhance UX.</p>
-        </div>
-        <div class="service-card">
-          <h3>🛠️ Post-Delivery Support</h3>
-          <p>Continued help after delivery for questions or minor issues.</p>
-        </div>
-        <div class="service-card">
-          <h3>💰 Affordable Pricing</h3>
-          <p>Quality service at a budget-friendly rate.</p>
-        </div>
+  <section id="services" data-aos="fade-up">
+  <div class="services-container">
+    <h2 class="section-title" data-aos="fade-right">Service</h2>
+    <div class="cards-wrapper">
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>✅ Modern & Responsive Web Design</h3>
+        <p>Optimized for all screen sizes — desktop, tablet, and mobile.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>🚀 Fast Performance & Speed Optimization</h3>
+        <p>Quick-loading websites for a smooth user experience.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+        <h3>🧩 Clean, Maintainable Code</h3>
+        <p>Easy to update and scale with well-structured HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+        <h3>✨ Interactive JavaScript Effects</h3>
+        <p>Dynamic animations and interactions to enhance UX.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
+        <h3>🛠️ Post-Delivery Support</h3>
+        <p>Continued help after delivery for questions or minor issues.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="600">
+        <h3>💰 Affordable Pricing</h3>
+        <p>Quality service at a budget-friendly rate.</p>
       </div>
     </div>
-  </section>
-
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
