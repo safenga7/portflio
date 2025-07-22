@@ -160,6 +160,12 @@ p {
     margin-bottom: 10px;
   }
   .profile-section img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+}
+}
+  .profile-section img {
     max-width: 90%;
   }
 }
