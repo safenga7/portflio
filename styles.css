@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+}
+
+li {
+  padding: 10px 20px;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+hr {
+  opacity: 0.2;
+}
+
+.profile-section,
+.profile-section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 0 20px;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+.profile-section h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.profile-section img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+h2 {
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+p {
+  opacity: 0.6;
+  line-height: 1.6;
+}
+
+#aboutme {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 10px 10px;
+  max-width: 100%;
+}
+
+#section_project {
+  text-align: center;
+  padding: 20px;
+}
+
+#project {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #000;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#services {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.services-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #000;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 10px;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .profile-section,
+  .profile-section2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-section h1 {
+    font-size: 28px;
+  }
+
+  #linkone {
+    margin-left: 0;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+  }
+}
