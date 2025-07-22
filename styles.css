@@ -3,28 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 #typing {
   font-family: monospace;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid black;
   animation: blink-caret 0.7s step-end infinite;
-  width: 1050px;
+  width: 30ch; /* عرض كافي لـ 30 حرف */
 }
-
 @keyframes blink-caret {
-
-  from,
-  to {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: black;
-  }
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
 }
-
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -42,7 +32,6 @@ a {
   text-decoration: none;
   color: black;
 }
-
 hr {
   opacity: 0.2;
 }
@@ -54,16 +43,15 @@ hr {
   justify-content: center;
   margin: 20px auto;
   padding: 0 20px;
-  max-width: 1100px;
+  max-width: 1080px;
   flex-wrap: wrap;
 }
-
 .profile-section h1 {
   font-size: 60px;
   margin-bottom: 20px;
-  width: 100%; /* إضافة هذا السطر */
-  text-align: center; /* لتوسيط النص */
+  width: 100%;
 }
+
 .profile-section img {
   width: 100%;
   max-width: 400px;
@@ -130,7 +118,7 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-
+  
 }
 
 .service-card {
@@ -160,33 +148,21 @@ p {
 }
 
 @media (max-width: 768px) {
-  .profile-section {
+  .profile-section,
+  .profile-section2 {
     flex-direction: column;
-    align-items: center; /* يوسّط العناصر عموديًا */
-    padding: 0 15px; /* يضيف هوامش جانبية */
+    align-items: center;
+    text-align: center;
   }
 
   .profile-section h1 {
     font-size: 28px;
-    width: 100%; /* يستخدم العرض الكامل */
-    text-align: center; /* يتوسّط النص */
-    white-space: normal; /* يلغي تأثير الكتابة إذا كان مشوشًا */
-    border-right: none; /* يخفي مؤشر الكتابة */
   }
 
-  .profile-section img {
-    max-width: 250px; /* يصغّر الصورة */
-  }
-}
-#linkone {
-  margin-left: 0;
-  margin-top: 10px;
-  display: block;
-  text-align: center;
-}
-@media (max-width: 768px) {
-  #typing {
-    animation: none;
-    border-right: none;
+  #linkone {
+    margin-left: 0;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
   }
 }
