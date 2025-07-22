@@ -61,9 +61,9 @@ hr {
 .profile-section h1 {
   font-size: 60px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 100%; /* إضافة هذا السطر */
+  text-align: center; /* لتوسيط النص */
 }
-
 .profile-section img {
   width: 100%;
   max-width: 400px;
@@ -160,27 +160,24 @@ p {
 }
 
 @media (max-width: 768px) {
-
-  .profile-section,
-  .profile-section2 {
+  .profile-section {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 15px;
+    align-items: center; /* يوسّط العناصر عموديًا */
+    padding: 0 15px; /* يضيف هوامش جانبية */
   }
 
   .profile-section h1 {
     font-size: 28px;
-    width: 100%;
-    white-space: normal;
-    border-right: none;
+    width: 100%; /* يستخدم العرض الكامل */
+    text-align: center; /* يتوسّط النص */
+    white-space: normal; /* يلغي تأثير الكتابة إذا كان مشوشًا */
+    border-right: none; /* يخفي مؤشر الكتابة */
   }
 
   .profile-section img {
-    max-width: 250px;
+    max-width: 250px; /* يصغّر الصورة */
   }
 }
-
 #linkone {
   margin-left: 0;
   margin-top: 10px;
