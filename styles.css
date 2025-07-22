@@ -154,9 +154,9 @@ p {
     align-items: center;
     text-align: center;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 350px) {
   .profile-section h1 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 10px;
   }
   .profile-section img {
